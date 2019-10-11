@@ -1,0 +1,32 @@
+/* Чтобы превратить нашу обертку div в сетку, мы просто дадим ей отображение grid.
+Но это пока ничего не делает, поскольку мы не определили, как мы хотим, чтобы наша сетка выглядела. Сейчас это
+просто складывает 6 div друг на друга. */
+
+.wrapper {
+  display: grid;
+  text-align: center;
+}
+
+.one {
+  background-color: rebeccapurple;
+}
+
+.two {
+  background-color: rgb(86, 160, 90);
+}
+
+.three {
+  background-color: rgb(165, 139, 25);
+}
+
+.four {
+  background-color: rgb(83, 82, 85);
+}
+
+.five {
+  background-color: rgb(51, 153, 85);
+}
+
+.six {
+  background-color: rgb(165, 42, 114);
+}
