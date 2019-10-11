@@ -26,13 +26,18 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  /* если grid-template-columns в px, то вёртска совсем не адаптивна
+  блоки даже не уменьшаются в размере и не сдвигаются влево
+  при изменении размера окна */
+  /* grid-template-columns: 100px 100px 100px; */
+  /* поэтому заменяю px на fr */
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50px 50px 50px;
   text-align: center;
   vertical-align: middle;
   grid-gap: 5px;
   /* расположить всё содержимое страницы по центру экрана */
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 /* Для позиционирования и изменения размера элементов мы будем указывать их и использовать свойства grid-column и grid-row: */
